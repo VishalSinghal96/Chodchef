@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+void solve(){
+    int q;
+    cin>>q;
+    string str;
+    cin>>str;
+    
+    string o = str.substr(0 , q/2);
+    string p = str.substr(q/2 , q);
+    
+    if(o==p){
+        cout<<"YES"<<"\n";
+    }
+    else{
+        cout<<"NO"<<"\n";
+    }
+     
+}
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    solve(); 
+	}
+	return 0;
+}
